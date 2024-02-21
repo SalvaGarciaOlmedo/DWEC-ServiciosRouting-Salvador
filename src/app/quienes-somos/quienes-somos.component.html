@@ -1,5 +1,15 @@
 <p>quienes-somos works!</p>
 
-<input type="button" value="GET" class="btn btn-secondary" (click)="get()">
+<input type="button" value="GET" class="btn btn-secondary" (click)="get3()">
 
-{{this.resultadoPeticion | json}}
+<input type="text" value="Introduce id " [(ngModel)]="inputIdGet" />
+<input type="button" value="GET" class="btn btn-secondary" (click)="get3()">
+<input type="button" value="POST" class="btn btn-secondary" (click)="post()">
+<input type="button" value="PUT" class="btn btn-secondary" (click)="put()">
+<input type="button" value="delete" class="btn btn-secondary" (click)="delete()">
+
+<input type="button" value="patch" class="btn btn-secondary" (click)="patch()">
+
+<pre>
+    {{this.resultadoPeticion | json}}
+</pre>
